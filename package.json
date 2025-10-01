@@ -5,7 +5,7 @@
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "test": "npm rebuild --runtime=electron --target=33.0.0 --disturl=https://electronjs.org/headers --abi=130"
+    "test": "npm rebuild --runtime=electron --target=38.2.0 --disturl=https://electronjs.org/headers --abi=139"
   },
   "repository": {
     "type": "git",
