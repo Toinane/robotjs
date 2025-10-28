@@ -296,6 +296,9 @@ void typeString(const char *str)
 			c2 = (*str++) & 0x3F;
 			c3 = (*str++) & 0x3F;
 			n = ((c & 0x07) << 18) | (c1 << 12) | (c2 << 6) | c3;
+		} else {
+			// Invalid UTF-8 sequence, skip it
+			continue;
 		}
 
 		#if defined(IS_MACOSX)
